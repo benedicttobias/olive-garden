@@ -4,8 +4,7 @@ require('styles/App.css');
 import React from 'react';
 import Clock from './Clock';
 import HandlingEvents from './HandlingEventsComponent';
-
-let yeomanImage = require('../images/yeoman.png');
+import ConditionalRendering from './ConditionalRenderingComponent';
 
 function Welcome(props){
     return <h1>Hello, {props.name}. This is using user-defined component</h1>
@@ -14,12 +13,12 @@ function Welcome(props){
 function AppComponent() {
     return (
       <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
         <div className="notice">
           <Welcome name="Ben"></Welcome>
         </div>
         <Clock />
         <HandlingEvents />
+        <ConditionalRendering />
       </div>
     );
 }

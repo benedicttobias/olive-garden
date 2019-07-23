@@ -30,8 +30,9 @@ class HandlingEventsComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        <button className="handlingevents-component" onClick={this.handleClick}>
+      <div className="handling-events-component">
+        <h3>Handling Events Example</h3>
+        <button onClick={this.handleClick}>
           { this.state.isToggleOn ? 'ON' : 'OFF' }
         </button>
         <hr />
