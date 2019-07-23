@@ -3,7 +3,7 @@ require('styles/App.css');
 
 import React from 'react';
 import Clock from './Clock';
-import ReactTutorial from './page/ReactTutorialComponent';
+import HandlingEvents from './HandlingEventsComponent';
 
 let yeomanImage = require('../images/yeoman.png');
 
@@ -17,13 +17,9 @@ function AppComponent() {
         <img src={yeomanImage} alt="Yeoman Generator" />
         <div className="notice">
           <Welcome name="Ben"></Welcome>
-          <Welcome name="John"></Welcome>
-          <Welcome name="Drake"></Welcome>
         </div>
-        <ReactTutorial></ReactTutorial>
         <Clock />
-        <Clock />
-        <Clock />
+        <HandlingEvents />
       </div>
     );
 }

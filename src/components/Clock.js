@@ -1,19 +1,22 @@
+require('styles//Clock.css');
+
 import React from 'react';
+
 
 class ClockComponent extends React.Component{
   constructor(props){
     // super() is a javascript keyword that is used to call functions on a parent 's object.
     // This is necessary to preserve the functionality of the constructor
-    // function of the class your component is inheriting from.props is being passed along 
+    // function of the class your component is inheriting from.props is being passed along
     // as well to make sure super has access to the same arguments as the overwriting constructor.
     // You should always pass props when calling the super constructor in a component class.
     super(props);
 
     // Set the state
     // state is a private property of components, a piece of information that only they can read
-    // and only they can change.Nothing outside of a component should ever know about a 
+    // and only they can change.Nothing outside of a component should ever know about a
     // component's state. If a component wants to share information about its state with
-    // another component, it can do that by passing it explicitly via props in the call to 
+    // another component, it can do that by passing it explicitly via props in the call to
     // the other component.
     this.state = {
       date: new Date()
@@ -42,7 +45,7 @@ class ClockComponent extends React.Component{
   
   render(){
     return (
-      <div>
+      <div className="clock-component">
         <h1>Hello, world!</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}</h2>
       </div>
