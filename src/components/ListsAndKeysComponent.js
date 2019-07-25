@@ -26,7 +26,7 @@ function NumberList(){
 function InlineNumberList(){
   return (
     <ul>
-      {numbers.map(x => 
+      {numbers.map(x =>
         <li key={x}>{x * 2}</li>)
       }
     </ul>
