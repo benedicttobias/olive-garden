@@ -5,6 +5,7 @@ import React from 'react';
 import Clock from './Clock';
 import HandlingEvents from './HandlingEventsComponent';
 import ConditionalRendering from './ConditionalRenderingComponent';
+import ListAndKeys from './ListsAndKeysComponent';
 
 function Welcome(props){
     return <h1>Hello, {props.name}. This is using user-defined component</h1>
@@ -19,6 +20,7 @@ function AppComponent() {
         <Clock />
         <HandlingEvents />
         <ConditionalRendering />
+        <ListAndKeys />
       </div>
     );
 }
