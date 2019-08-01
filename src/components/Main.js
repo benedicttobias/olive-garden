@@ -8,6 +8,7 @@ import ConditionalRendering from './ConditionalRenderingComponent';
 import ListAndKeys from './ListsAndKeysComponent';
 import Forms from './FormsComponent';
 import LiftingStateUp from './LiftingStateUpComponent';
+import CompositionVsInheritance from './CompositionVsInheritanceComponent';
 
 function Welcome(props){
     return <h1>Hello, {props.name}. This is using user-defined component</h1>
@@ -25,6 +26,7 @@ function AppComponent() {
         <ListAndKeys />
         <Forms />
         <LiftingStateUp />
+        <CompositionVsInheritance />
       </div>
     );
 }
